@@ -11,6 +11,12 @@ body {
 .padding-top-60 {
   padding-top: 60px;
 }
+.font-bold {
+  font-weight: 700;
+}
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
 /* body */
 
 .header_part{
@@ -23,6 +29,9 @@ body {
   padding: 0   0 4px;
   position: relative;
   z-index: 6;
+}
+.lp-top-bar-black {
+  background: #000;
 }
 .lp-topbar-menu {
   padding: 0; 
@@ -64,6 +73,7 @@ color: #fff;
   color: #fff;
   position: relative;
   z-index: 10;
+  margin: 0;
 }
 .navbar-custom .navbar-nav>li>a {
   color: #fff;
@@ -316,7 +326,246 @@ footer{
  padding: 0;
 }
 
+/* listing page */
+.innerPage_Headeing {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+   url('../img/bridal-wear.jpg') 0 0 repeat;
+   height: 213px; 
+}
 
+.breadcrumbs {
+  margin:40px 0 0;
+  padding: 0;
+}
+.breadcrumbs li {
+  display: inline-block;
+  position: relative;
+  margin-right: 13px!important;
+  padding-left: 16px!important;
+  color:  #fff;
+}
+
+.breadcrumbs li:first-child {
+  padding-left: 0!important;
+  padding-right: 4px!important;
+  margin-right: 0!important;
+}
+.breadcrumbs li a {
+  color:#fff;
+}
+.breadcrumbs a:first-child {
+  display: block;
+}
+.breadcrumbs li:first-child::before{
+  display:none;
+}
+
+.breadcrumbs li:before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 9px;
+  color: #fff;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+ .lp-title h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.lp-filter-inner {
+  border-left: 0;
+  border-right: 0;
+  box-shadow: none;
+  margin-top: -25px;
+  padding: 10px!important;
+}
+
+/* listing page */
+
+/* more-filter */
+.more-filter {
+  background: #fff;
+  padding: 10px;
+  margin-top: -30px;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0,0,0,.08) inset;
+  border-bottom: 1px solid #dedede;
+}
+.more-filter .btn-group {
+  display: inline-block;
+}
+
+.customBtn{
+  background-color: #f8f8f8;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  color: #9f9f9f;
+  float: left;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 27px;
+  padding: 3px 15px;
+  width: 100%;
+}
+
+.scrollable-menu {
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+}
+
+/* more-filter */
+/* features-filter */
+.features-filter {
+  background-color: #fff;
+  border-bottom: 1px solid #dedede;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-radius: 0;
+  box-shadow: none;
+  margin-top: 0;
+  padding: 14px 14px 9px
+}
+.features-filter ul {
+  margin: 0;
+  padding: 10px;
+}
+
+.features-filter ul li {
+  display: inline-block;
+  float: none;
+  margin-bottom: 5px;
+  margin-right: 0;
+  padding-right: 26px;
+  vertical-align: top;
+  width: 23%;
+}
+
+.features-filter ul li label {
+  font-weight: normal;
+  display: block;
+}
+
+.checkbox {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.features-filter ul li .checkbox label {
+  padding-left: 27px;
+}
+
+.checkbox label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
+  border-radius: 2px;
+}
+
+
+.features-filter ul li input[type=checkbox] {
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 20px;
+  margin-right: 5px;
+  margin-left: 0;
+  margin-top: 5px;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
+
+.features-filter ul li .checkbox label::before {
+  background-color: #fff;
+  border: 1px solid #dedede;
+}
+input[type=checkbox]:checked+label:before {
+  content: "\f00c";
+  font-size: 11px;
+  text-align: center;
+  line-height: 20px;
+  font-family: FontAwesome;
+  color: #7f7f7f;
+  background-color: transparent;
+  border: 1px solid #7f7f7f;
+}
+/* features-filter */
+
+/* listing-view-layout  */
+
+.listing-view-layout {
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+}
+
+.listing-view-layout>ul {
+  float: left;
+  list-style-type: none;
+  margin: 0 10px 0 0 ;
+  padding: 0;
+}
+
+.listing-view-layout>ul li {
+  float: left;
+  margin-left: 8px;
+}
+
+.listing-view-layout>ul li a {
+  border: 2px solid #bcbcbc;
+  border-radius: 50%;
+  color: #bcbcbc;
+  float: left;
+  font-size: 14px;
+  height: 35px;
+  line-height: 32px;
+  text-align: center;
+  width: 35px;
+}
+
+.listing-view-layout>ul li a:hover {
+  color: #565555;
+}
+
+.list-group-item {
+  height:auto;
+ 
+}
+.list-group-item.active small {
+  color:#fff;
+}
+.stars {
+  margin:20px auto 1px;    
+}
+.closed {
+  color: red;
+  
+  font-weight: 500;
+ 
+}
+
+/* listing-view-layout  */
 /* custom Media  */
 @media (min-width:768px) {
   .lp-home-categoires {
