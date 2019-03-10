@@ -329,35 +329,21 @@
                             <form>
 
 
+<div class="form-group">
+                                	<div class="rating">
+                                            <input type="radio" id="star10" name="rating" value="10" /><label for="star10" title="Super Rocks!">5 stars</label>
+                                            <input type="radio" id="star9" name="rating" value="9" /><label for="star9" title="Rocks!">4 stars</label>
+                                            <input type="radio" id="star8" name="rating" value="8" /><label for="star8" title="Pretty Best">3 stars</label>
+                                            <input type="radio" id="star7" name="rating" value="7" /><label for="star7" title="Pretty good">2 stars</label>
+                                            <input type="radio" id="star6" name="rating" value="6" /><label for="star6" title="Meh">1 star</label>
+                                            
+                                          
+                                        
+                                        
+                                        </div>
 
-                                <div class="form-group" id="rating-ability-wrapper">
-                                    <label class="control-label" for="rating">
-                                        <span class="field-label-header">Your Rating for this listing</span>
-                                        <br>
-                                        <span class="field-label-info"></span>
-                                        <input type="hidden" id="selected_rating" name="selected_rating" value="" required="required">
-                                    </label>
-                                    <h2 class="bold rating-header" style="">
-                                        <span class="selected-rating">0</span>
-                                        <small> / 5</small>
-                                    </h2>
-                                    <button type="button" class="btnrating btn btn-default btn-xs" data-attr="1" id="rating-star-1">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btnrating btn btn-default btn-xs" data-attr="2" id="rating-star-2">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btnrating btn btn-default btn-xs" data-attr="3" id="rating-star-3">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btnrating btn btn-default btn-xs" data-attr="4" id="rating-star-4">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btnrating btn btn-default btn-xs" data-attr="5" id="rating-star-5">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </button>
-                                </div>
 
+                                        </div>
 
 
 
@@ -789,35 +775,7 @@
     <script src="js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
-
-            $(".btnrating").on('click', (function (e) {
-
-                var previous_value = $("#selected_rating").val();
-
-                var selected_value = $(this).attr("data-attr");
-                $("#selected_rating").val(selected_value);
-
-                $(".selected-rating").empty();
-                $(".selected-rating").html(selected_value);
-
-                for (i = 1; i <= selected_value; ++i) {
-                    $("#rating-star-" + i).toggleClass('btn-warning');
-                    $("#rating-star-" + i).toggleClass('btn-default');
-                }
-
-                for (ix = 1; ix <= previous_value; ++ix) {
-                    $("#rating-star-" + ix).toggleClass('btn-warning');
-                    $("#rating-star-" + ix).toggleClass('btn-default');
-                }
-
-            }));
-
-
-        });
-
-    </script>
+    
 
 
 
