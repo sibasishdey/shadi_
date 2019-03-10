@@ -2,8 +2,18 @@
 body {
   font-family: 'Quicksand', sans-serif;
 }
+
+textarea {
+  resize: none;
+}
 .margin-bottom-60 {
   margin-bottom: 60px;
+}
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+.margin-bottom-20 {
+  margin-bottom: 20px;
 }
 .margin-top-120 {
   margin-top:0px;
@@ -16,6 +26,10 @@ body {
 }
 .margin-bottom-20 {
   margin-bottom: 20px;
+}
+a:focus, a:hover {
+  
+  text-decoration: none;
 }
 /* body */
 
@@ -566,6 +580,240 @@ input[type=checkbox]:checked+label:before {
 }
 
 /* listing-view-layout  */
+
+
+/* list details page */
+
+.caption {
+  color: #fff;
+}
+
+.post-detail-content {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  color: #7f7f7f;
+  font-size: 14px;
+  line-height: 24px;
+  width: 100%;
+  padding: 14px 20px 15px;
+  display: inline-block;}
+
+  .single-inner-container {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.features {
+  padding: 11px 20px 0 0;
+}
+
+.extra-fields {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.features>li {
+  background-color: transparent;
+  border: medium;
+  border-radius: 0;
+  float: left;
+  font-size: 14px;
+  line-height: 24px;
+  margin-right: 0;
+  min-height: 0;
+  width: 25%;
+  margin-bottom: 20px;
+  padding-left: 17px;
+  list-style: none;
+}
+.features>li a {
+  font-size: 14px;
+  padding: 0;
+  color: #363f48;
+  text-decoration: none;
+}
+.features>li:hover> a {
+  color: #41a6df;
+}
+.extra-fields h3 {
+  padding: 0;
+  margin: 0;
+}
+
+
+.features-listing {
+  margin: 0;
+  padding: 0;
+}
+.features-listing>li {
+  line-height: 23px;
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  display: inline-block;
+  color: #7f7f7f;
+}
+.features-listing>li strong {
+  float: left;
+  font-family: open sans,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.features-listing>li span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: left;
+  float: right;
+}
+.features-listing>li:last-child{
+  border-bottom: none;
+}
+.review-form {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding: 0;
+}
+.reviewForm {
+  display: block;
+  padding: 15px ;
+  text-decoration: none;
+  position: relative;
+  
+}
+
+.reviewForm::before {
+  content:"-";
+  font-size: 30px;
+  display: block;
+  position: absolute;
+  right: 10px;
+  color: #000;
+}
+
+.reviewForm.collapsed::before {
+  content:"+";
+  font-size: 30px;
+  display: block;
+  position: absolute;
+  right: 10px;
+  color: #000;
+}
+
+
+.reviewForm h3 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000; 
+  margin-top: 10px;
+}
+
+.btn-outline-primary:after{
+  background: #007bff;
+}
+.btn-outline-primary:hover{
+  background: #007bff;
+}
+.slideup:after{
+  top: 0;
+  z-index: -1;
+      transform: translate3D(0,100%,0); /* move elements above button so they don't appear initially */
+  transition: all .5s;/* onhover background color */
+}
+
+.slideup:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+.btn{
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: all .5s;
+}
+/* //// Default effect: Slide from Top  //// */
+.btn:before,
+.btn:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+  transition: all .5s;
+}
+.btn:hover{
+	color: white;
+}
+.btn:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+.btn-primary:before{
+  background: #007bff; /* button default background color */
+}
+.btn-primary:after{
+  background: #0000005a;
+}
+.btn-primary:hover{
+  background: #025ec1;
+}
+.btn-outline-primary {
+  color: #007bff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #007bff;
+}
+
+.card{
+  padding: 0 25px 15px; 
+}
+
+.review-form form .form-group {
+  border-bottom: 1px solid #e3e3e3;
+  padding: 0 0 30px;
+}
+.review-form form .form-group:last-child{
+  border-bottom:none;
+}
+
+.timeing {
+  margin: 0;
+  padding: 0;
+}
+
+.red {
+  background-color: red;
+}
+.socal-link {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.socal-link li {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  font-size: 30px;
+}
+.socal-link li a {
+  color: #7f7f7f;
+}
+.address li span {
+  display: inline-block;
+  vertical-align: text-top;
+}
+.address li span:last-child{
+  width: 80%;
+  margin: 0 0 0 10px;
+}
+.iconMarker {}
+/* list details page */
+
+
+
 /* custom Media  */
 @media (min-width:768px) {
   .lp-home-categoires {
