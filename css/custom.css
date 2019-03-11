@@ -95,6 +95,18 @@ color: #fff;
 .navbar-custom a.navbar-brand {
   color: #fff;
 }
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+  color: #fff;
+}
+.dropdown-header {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+  background-color: #000;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+  background-color: #000;
+}
 /* navbar menu*/
 /* banner */
 .banner {
@@ -305,8 +317,8 @@ padding: 0;
 }
 .show-img {
   min-height: 440px;
-  overflow: hidden;
-  display: flex;
+  overflow: inherit;
+  display: block;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -413,8 +425,14 @@ footer{
   border-bottom: 1px solid #dedede;
 }
 .more-filter .btn-group {
-  display: inline-block;
+  display: block;
 }
+.bridalwear {
+  float: none;
+}
+
+
+
 
 .customBtn{
   background-color: #f8f8f8;
@@ -446,21 +464,21 @@ footer{
   border-radius: 0;
   box-shadow: none;
   margin-top: 0;
-  padding: 14px 14px 9px
+  padding: 14px 0 9px
 }
 .features-filter ul {
   margin: 0;
-  padding: 10px;
+  padding: 0;
 }
 
 .features-filter ul li {
-  display: inline-block;
+  display: block;
   float: none;
   margin-bottom: 5px;
   margin-right: 0;
   padding-right: 26px;
   vertical-align: top;
-  width: 23%;
+  width: 100%;
 }
 
 .features-filter ul li label {
@@ -530,7 +548,8 @@ input[type=checkbox]:checked+label:before {
 
 .listing-view-layout {
   display: inline-block;
-  float: right;
+  /* float: right; */
+margin-top: 20px;
   vertical-align: top;
 }
 
@@ -547,9 +566,9 @@ input[type=checkbox]:checked+label:before {
 }
 
 .listing-view-layout>ul li a {
-  border: 2px solid #bcbcbc;
+  border: 2px solid #fff;
   border-radius: 50%;
-  color: #bcbcbc;
+  color: #fff;
   float: left;
   font-size: 14px;
   height: 35px;
@@ -566,6 +585,12 @@ input[type=checkbox]:checked+label:before {
   height:auto;
  
 }
+.media-object {
+  margin-bottom: 5px;
+}
+
+
+
 .list-group-item.active small {
   color:#fff;
 }
@@ -746,7 +771,7 @@ input[type=checkbox]:checked+label:before {
   transition: all .5s;
 }
 .btn:hover{
-	color: white;
+	color: #007bff;
 }
 .btn:hover:after{
   transform: translate3D(0,0,0);
@@ -930,5 +955,26 @@ input[type=checkbox]:checked+label:before {
     margin-left: 15px;
     height: 20px;
     width: 8px;
+  }
+  .show-img {
+    overflow: hidden;
+    display: flex;
+  }
+  .more-filter .btn-group {
+    display: inline-block;
+  }
+  .bridalwear {
+    float: right;
+  }
+  .features-filter ul li {
+    display: inline-block;
+    width: 23%;
+  }
+  .features-filter {
+    padding: 14px 0 9px;
+  }
+  .features-filter ul {
+  
+    padding: 10px;
   }
 }
